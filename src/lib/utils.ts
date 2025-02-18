@@ -54,3 +54,7 @@ export const flyAndScale = (
 		easing: cubicOut
 	};
 };
+
+export const slugFromPath = (path: string) => {
+	return path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? '';
+};
