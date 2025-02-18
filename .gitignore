@@ -1,27 +1,29 @@
-node_modules
-**/.vscode/
 
-# Output
+# Generated
+**/.vscode/
+/.svelte-kit
+/build
 .output
 .vercel
 .netlify
 .wrangler
-/.svelte-kit
-/build
-*.lockb
-*.lock
-*.log
+**/.log
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
-# OS
+# System
 .DS_Store
 Thumbs.db
 
-# Env
+# Environment
 .env
 .env.*
 !.env.example
 !.env.test
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Package Managers
+/node_modules
+*.lockb
+*.lock
+*.lock.json
+*.lock.yaml
