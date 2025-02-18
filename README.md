@@ -1,38 +1,36 @@
-# sv
+# Portfolio
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+My personal portfolio website built with SvelteKit.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Manual Setup
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+bun x sv create [name]
+- prettier
+- eslint
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install shadcn-svelte, all default features
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun x sv@0.6.18 add tailwindcss
+bun x shadcn-svelte@latest init
 ```
-
-## Building
-
-To create a production version of your app:
 
 ```bash
-npm run build
+bun i -D mdsvex
+bun i remark-github
+bun i remark-abbr
+bun i rehype-slug
+bun i rehype-autolink-headings
 ```
 
-You can preview the production build with `npm run preview`.
+```bash
+bun i
+bun format
+bun dev
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+# or
+
+bun build
+```
