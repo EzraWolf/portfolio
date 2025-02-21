@@ -16,7 +16,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		)
 	);
 
-	const posts = await Promise.all(postPromises);
+	const posts: App.PageBase[] = await Promise.all(postPromises);
 
 	// const publishedPosts = posts.filter((post) => post.published)
 	const publishedPosts = posts.filter((post) => post.published).slice(0, MAX_POSTS); // Limit the number of posts
