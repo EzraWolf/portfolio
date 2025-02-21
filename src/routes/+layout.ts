@@ -1,2 +1,3 @@
-// export const prerender = true / false
-export const prerender = 'auto';
+
+export const prerender = true; // Use `true` for static prerendering, `false` for SPA (?)
+// export const prerender = 'auto';
