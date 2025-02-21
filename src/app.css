@@ -3,76 +3,159 @@
 @tailwind utilities;
 
 @layer base {
+	/* Neo-brutalist standard styling
+	 * 
+	 * !!!!CHANGE THIS NOT THE TAILWINDCSS CONFIG!!!! 
+	*/
 	:root {
-		--background: 0 0% 100%;
-		--foreground: 20 14.3% 4.1%;
+		/* Color scheme */
+		--white: hsl(0, 0%, 100%); /* #FFFFFF */
+		--black: hsl(0, 0%, 0%); /* #000000 */
 
+		--neo-white: hsl(48, 100%, 96.08%); /* #FFFBEB */
+		--neo-black: hsl(0, 0%, 10.2%); /* #1A1A1A */
+
+		--red: hsl(0, 100%, 60%); /* #FF3333 */
+		--yellow: hsl(49.89, 100%, 65.1%); /* #FFE14D */
+
+		/* Fontface */
+		--primary-font: monospace;
+
+		/* Spacing */
+		--margin-sm: 0.5rem;
+		--margin-md: 1rem;
+		--margin-lg: 2rem;
+		--margin-xl: 4rem;
+
+		--padding-sm: 0.5rem;
+		--padding-md: 1rem;
+		--padding-lg: 2rem;
+		--padding-xl: 4rem;
+
+		--border-width-sm: 3px;
+		--border-width-md: 4px;
+		--border-width-lg: 8px;
+
+		--radius: 0rem;
+	}
+
+	/* Tailwindcss color scheme */
+	:root {
+		--background: var(--neo-white);
+		--foreground: var(--neo-black);
+
+		/* TODO */
 		--muted: 60 4.8% 95.9%;
 		--muted-foreground: 25 5.3% 44.7%;
 
-		--popover: 0 0% 100%;
-		--popover-foreground: 20 14.3% 4.1%;
+		--popover: var(--neo-white);
+		--popover-foreground: var(--neo-black);
 
-		--card: 0 0% 100%;
-		--card-foreground: 20 14.3% 4.1%;
+		--card: var(--neo-white);
+		--card-foreground: var(--neo-black);
 
-		--border: 20 5.9% 90%;
-		--input: 20 5.9% 90%;
+		--border: var(--neo-black);
+		--input: var(--neo-white);
 
-		--primary: 24 9.8% 10%;
-		--primary-foreground: 60 9.1% 97.8%;
+		--primary: var(--red);
+		--primary-foreground: var(--neo-white);
 
-		--secondary: 60 4.8% 95.9%;
-		--secondary-foreground: 24 9.8% 10%;
+		--secondary: var(--yellow);
+		--secondary-foreground: var(--neo-black);
 
-		--accent: 60 4.8% 95.9%;
-		--accent-foreground: 24 9.8% 10%;
+		--accent: var(--neo-black);
+		--accent-foreground: var(--neo-white);
 
+		/* TODO */
 		--destructive: 0 72.2% 50.6%;
-		--destructive-foreground: 60 9.1% 97.8%;
+		--destructive-foreground: var(--neo-white);
 
-		--ring: 20 14.3% 4.1%;
-
-		--radius: 0.5rem;
+		--ring: var(--neo-black);
 	}
 
 	.dark {
-		--background: 20 14.3% 4.1%;
-		--foreground: 60 9.1% 97.8%;
+		--background: var(--neo-black);
+		--foreground: var(--neo-white);
 
+		/* TODO */
 		--muted: 12 6.5% 15.1%;
 		--muted-foreground: 24 5.4% 63.9%;
 
-		--popover: 20 14.3% 4.1%;
-		--popover-foreground: 60 9.1% 97.8%;
+		--popover: var(--neo-black);
+		--popover-foreground: var(--neo-white);
 
-		--card: 20 14.3% 4.1%;
-		--card-foreground: 60 9.1% 97.8%;
+		--card: var(--neo-black);
+		--card-foreground: var(--neo-white);
 
-		--border: 12 6.5% 15.1%;
-		--input: 12 6.5% 15.1%;
+		--border: var(--neo-white);
+		--input: var(--neo-black);
 
-		--primary: 60 9.1% 97.8%;
-		--primary-foreground: 24 9.8% 10%;
+		--primary: var(--red);
+		--primary-foreground: var(--neo-black);
 
-		--secondary: 12 6.5% 15.1%;
-		--secondary-foreground: 60 9.1% 97.8%;
+		--secondary: var(--yellow);
+		--secondary-foreground: var(--neo-black);
 
-		--accent: 12 6.5% 15.1%;
-		--accent-foreground: 60 9.1% 97.8%;
+		--accent: var(--neo-black);
+		--accent-foreground: var(--neo-white);
 
+		/* TODO */
 		--destructive: 0 62.8% 30.6%;
-		--destructive-foreground: 60 9.1% 97.8%;
+		--destructive-foreground: var(--neo-white);
 
-		--ring: 24 5.7% 82.9%;
+		--ring: var(--neo-white);
+	}
+
+	.main {
+		margin: var(--margin-md);
+		padding: var(--padding-md);
+	}
+
+	.neo-border-sm {
+		border: var(--border);
+		border-radius: var(--radius);
+		border-style: solid;
+		border-width: var(--border-width-sm);
+	}
+
+	.neo-border-md {
+		border: var(--border);
+		border-radius: var(--radius);
+		border-style: solid;
+		border-width: var(--border-width-md);
+	}
+
+	.neo-border-lg {
+		border: var(--border);
+		border-radius: var(--radius);
+		border-style: solid;
+		border-width: var(--border-width-lg);
+	}
+
+	.neo-shadow-sm {
+		box-shadow: calc(var(--border-width-sm)) calc(var(--border-width-sm)) 0px 0px var(--border);
+	}
+
+	.neo-shadow-md {
+		box-shadow: calc(var(--border-width-md)) calc(var(--border-width-md)) 0px 0px var(--border);
+	}
+
+	.neo-shadow-lg {
+		box-shadow: calc(var(--border-width-lg)) calc(var(--border-width-lg)) 0px 0px var(--border);
+	}
+
+	.neo-dark {
+		background-color: var(--neo-black);
+		border: var(--neo-white);
+		color: var(--neo-white);
 	}
 }
 
+/* Directly and globally apply styling to elements */
 @layer base {
-	* {
-		@apply border-border;
-	}
 	body {
-		@apply bg-background text-foreground;
+		background-color: var(--background);
+		color: var(--foreground);
+		font-family: var(--primary-font);
 	}
 }
