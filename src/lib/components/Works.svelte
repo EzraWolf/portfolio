@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageBase } from '$lib/types';
+	import type { PageBase } from "$lib/types";
 
 	type Props = {
 		works: PageBase[];
@@ -25,7 +25,7 @@
 					<div class="space-y-2">
 						<div class="flex justify-between">
 							<span class="text-sm font-bold uppercase text-[--primary]">
-								{work.tags.join(', ')}
+								{work.tags.join(", ")}
 							</span>
 							<span class="text-sm font-bold">{new Date(work.date).getFullYear()}</span>
 						</div>

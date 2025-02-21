@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-	import type { SvelteComponentTyped } from 'svelte/internal';
+	import type { PageData } from "./$types";
+	import type { SvelteComponentTyped } from "svelte/internal";
 
-	import PageHeader from '$lib/components/pages/PageHeader.svelte';
+	import PageHeader from "$lib/components/pages/PageHeader.svelte";
 
 	export let data: PageData;
 	type C = $$Generic<typeof SvelteComponentTyped<any, any, any>>;

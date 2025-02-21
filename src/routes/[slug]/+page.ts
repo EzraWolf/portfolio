@@ -1,6 +1,6 @@
-import type { PageLoad } from './$types';
-import { slugFromPath } from '$lib/utils';
-import { error } from '@sveltejs/kit';
+import type { PageLoad } from "./$types";
+import { slugFromPath } from "$lib/utils";
+import { error } from "@sveltejs/kit";
 
 export const load: PageLoad = async ({ params }) => {
 	const modules = import.meta.glob(`/src/content/*.{md,svx,svelte.md}`);
@@ -20,7 +20,7 @@ export const load: PageLoad = async ({ params }) => {
 	const post = await match.resolver?.();
 
 	if (!post || !post.metadata.published) {
-		throw error(404, 'Post not found');
+		throw error(404, "Post not found");
 	}
 
 	return {

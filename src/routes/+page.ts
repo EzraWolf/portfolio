@@ -1,6 +1,6 @@
-import type { PageServerLoad } from './$types';
+import type { PageServerLoad } from "./$types";
 
-import { slugFromPath } from '$lib/utils';
+import { slugFromPath } from "$lib/utils";
 
 const MAX_POSTS = 10;
 
@@ -26,10 +26,10 @@ export const load: PageServerLoad = async ({ params }) => {
 	return {
 		posts: publishedPosts,
 		seo: {
-			title: 'Portfolio Home',
-			description: 'A collection of portfolio works, development projects, and case studies.',
-			image: '/project-social-image.jpg',
-			keywords: ['web design', 'portfolio', 'case study']
+			title: "Portfolio Home",
+			description: "A collection of portfolio works, development projects, and case studies.",
+			image: "/project-social-image.jpg",
+			keywords: ["web design", "portfolio", "case study"]
 		}
 	};
 };

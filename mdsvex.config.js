@@ -1,14 +1,14 @@
-import remarkAbbr from 'remark-abbr';
-import remarkGithub from 'remark-github';
-import rehypeSlug from 'rehype-slug';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import { defineMDSveXConfig } from 'mdsvex';
+import remarkAbbr from "remark-abbr";
+import remarkGithub from "remark-github";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import { defineMDSveXConfig } from "mdsvex";
 
 const config = defineMDSveXConfig({
-	extensions: ['.md', '.svelte.md', '.svx'],
+	extensions: [".md", ".svelte.md", ".svx"],
 
 	smartypants: {
-		dashes: 'oldschool'
+		dashes: "oldschool"
 	},
 
 	remarkPlugins: [
@@ -16,7 +16,7 @@ const config = defineMDSveXConfig({
 		[
 			remarkGithub,
 			{
-				repository: 'https://github.com/EzraWolf/portfolio.git'
+				repository: "https://github.com/EzraWolf/portfolio.git"
 			}
 		]
 	],
@@ -26,7 +26,7 @@ const config = defineMDSveXConfig({
 		[
 			rehypeAutolinkHeadings,
 			{
-				behavior: 'append'
+				behavior: "append"
 			}
 		]
 	]
