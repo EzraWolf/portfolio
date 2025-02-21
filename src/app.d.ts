@@ -7,6 +7,25 @@ declare global {
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}
+
+		interface MdsvexFile {
+			default: import('svelte/internal').SvelteComponent;
+			metadata: Record<string, string>;
+		}
+
+		type MdsvexResolver = () => Promise<MdsvexFile>;
+
+		interface PageBase {
+			slug: string;
+			title: string;
+			description: string;
+			author: string;
+			date: string;
+			tags: string[];
+			coverImagePath: string;
+			coverImageAlt: string;
+			published: boolean;
+		}
 	}
 }
 
