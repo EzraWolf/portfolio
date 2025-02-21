@@ -1,4 +1,4 @@
-# Portfolio
+# [Portfolio](ezrawolf.info)
 
 My personal portfolio website built with SvelteKit.
 
