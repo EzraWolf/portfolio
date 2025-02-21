@@ -22,6 +22,8 @@ declare global {
 			author: string;
 			date: string;
 			tags: string[];
+			coverImagePath: string;
+			coverImageAlt: string;
 			published: boolean;
 		}
 	}

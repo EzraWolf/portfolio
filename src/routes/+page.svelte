@@ -2,25 +2,18 @@
 	import type { PageData } from './$types';
 
 	import PageHeader from '$lib/components/pages/PageHeader.svelte';
-	import PageArticle from '$lib/components/pages/PageArticle.svelte';
 
-	import { Button } from '$lib/components/ui/button';
+	import Hero from '$lib/components/heros/Hero.svelte';
+	import HeroBar from '$lib/components/heros/HeroBar.svelte';
+	import Works from '$lib/components/Works.svelte';
 
 	export let data: PageData;
 </script>
 
 <PageHeader title="Home" description="This is the home page" />
 
-<p>A minimalistic portfolio site</p>
+<Hero upper="Ezra Wolf." lower="Waking up is painful." />
 
-{#each data.posts as { slug, title, author, description, date }}
-	<PageArticle>
-		{title}
-		{description}
-	</PageArticle>
-{/each}
+<HeroBar title="Latest Works" />
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-<Button>Click me</Button>
+<Works works={data.posts} />
