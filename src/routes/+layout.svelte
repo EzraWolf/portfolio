@@ -1,7 +1,10 @@
 <script lang="ts">
+	import { page } from '$app/state';
+
 	// Global CSS styling
 	import '../app.css';
 
+	import PageSEO from '$lib/components/PageSEO.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 
@@ -19,6 +22,15 @@
 
 	let { children } = $props();
 </script>
+
+<!-- Use `+page.ts` for `{...page.data.seo}` -->
+<PageSEO
+	title="Ezra Wolf's Portfolio"
+	description="Take a look."
+	image="/social-preview.jpg"
+	keywords={['Ezra Wolf', 'Portfolio']}
+	{...page.data.seo}
+/>
 
 <div class="flex min-h-screen flex-col p-2 sm:p-4 md:p-8">
 	<div class="neo-border-md neo-shadow-md sm:neo-border-lg sm:neo-shadow-lg flex flex-1 flex-col">

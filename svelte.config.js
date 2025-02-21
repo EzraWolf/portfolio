@@ -26,14 +26,14 @@ const config = {
 			strict: true
 		}),
 		prerender: {
-            handleHttpError: ({ status, path, referrer, referenceType }) => {
-                if (status === 404) {
-                    console.warn(`404 error on ${path} (linked from ${referrer})`);
-                    return;
-                }
-                throw new Error(`${status} error on ${path} (linked from ${referrer})`);
-            }
-        }
+			handleHttpError: ({ status, path, referrer, referenceType }) => {
+				if (status === 404) {
+					console.warn(`404 error on ${path} (linked from ${referrer})`);
+					return;
+				}
+				throw new Error(`${status} error on ${path} (linked from ${referrer})`);
+			}
+		}
 	}
 };
 

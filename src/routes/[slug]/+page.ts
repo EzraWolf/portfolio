@@ -25,6 +25,12 @@ export const load: PageLoad = async ({ params }) => {
 
 	return {
 		component: post.default,
-		metadata: post.metadata
+		metadata: post.metadata,
+		seo: {
+			title: post.metadata.title,
+			description: post.metadata.description,
+			image: post.metadata.coverImagePath,
+			keywords: post.metadata.tags
+		}
 	};
 };

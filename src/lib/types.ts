@@ -9,3 +9,10 @@ export type PageBase = {
 	coverImageAlt: string;
 	published: boolean;
 };
+
+export type SeoData = {
+	title: string;
+	description: string;
+	image: string;
+	keywords: string[];
+};
