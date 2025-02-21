@@ -17,16 +17,16 @@
 				>
 					<div class="mb-4">
 						<img
+							class="aspect-[4/3] w-full border-2 object-cover"
 							src={work.coverImagePath}
 							alt={work.coverImageAlt}
-							class="aspect-[4/3] w-full border-2 object-cover"
 						/>
 					</div>
 					<div class="space-y-2">
 						<div class="flex justify-between">
-							<span class="text-sm font-bold uppercase text-[--primary]"
-								>{work.tags.join(', ')}</span
-							>
+							<span class="text-sm font-bold uppercase text-[--primary]">
+								{work.tags.join(', ')}
+							</span>
 							<span class="text-sm font-bold">{new Date(work.date).getFullYear()}</span>
 						</div>
 						<h3 class="text-lg font-bold">{work.title}</h3>

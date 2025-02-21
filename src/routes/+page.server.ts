@@ -1,4 +1,5 @@
 import type { PageServerLoad } from './$types';
+
 import { slugFromPath } from '$lib/utils';
 
 const MAX_POSTS = 10;
@@ -22,7 +23,5 @@ export const load: PageServerLoad = async ({ params }) => {
 	const publishedPosts = posts.filter((post) => post.published).slice(0, MAX_POSTS); // Limit the number of posts
 	publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
 
-	return {
-		posts: publishedPosts
-	};
+	return { posts: publishedPosts };
 };
