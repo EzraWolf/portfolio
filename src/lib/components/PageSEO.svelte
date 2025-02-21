@@ -4,13 +4,13 @@
 	export let title: string;
 	export let description: string;
 	export let keywords: string[];
-<<<<<<< Updated upstream
 	export let image: string = "/default-social-image.jpg";
-=======
-	export let image: string = '/default-social-image.jpg';
 	export let noIndex: boolean = false;
-	// Automatic absolute URL conversion
 
+	let canonical = page.url.href;
+	let siteName = "Ezra Wolf's Portfolio";
+
+	// Automatic absolute URL conversion
 	$: pageImageURL = new URL(image, page.url.origin).href;
 </script>
 
@@ -18,17 +18,10 @@
 	<!-- Core Metadata -->
 	<title>{title}</title>
 	<meta name="description" content={description} />
-<<<<<<< Updated upstream
 	<meta name="robots" content={noIndex ? "noindex,nofollow" : "index,follow"} />
 
 	{#if keywords.length}
 		<meta name="keywords" content={keywords.join(", ")} />
-=======
-	<meta name="robots" content={noIndex ? 'noindex,nofollow' : 'index,follow'} />
-
-	{#if keywords.length}
-		<meta name="keywords" content={keywords.join(', ')} />
->>>>>>> Stashed changes
 	{/if}
 
 	<!-- Open Graph (Facebook/Discord) -->
