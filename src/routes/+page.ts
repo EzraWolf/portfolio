@@ -26,10 +26,10 @@ export const load: PageServerLoad = async ({ params }) => {
 	return {
 		posts: publishedPosts,
 		seo: {
-			title: "Portfolio Home",
-			description: "A collection of portfolio works, development projects, and case studies.",
-			image: "/project-social-image.jpg",
-			keywords: ["web design", "portfolio", "case study"]
+			title: 'Portfolio Home',
+			description: 'A collection of portfolio works, development projects, and case studies.',
+			image: '/project-social-image.jpg',
+			keywords: ['web design', 'portfolio', 'case study']
 		}
 	};
 };
