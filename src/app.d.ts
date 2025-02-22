@@ -9,7 +9,7 @@ declare global {
 		// interface Platform {}
 
 		interface MdsvexFile {
-			default: import('svelte/internal').SvelteComponent;
+			default: import("svelte/internal").SvelteComponent;
 			metadata: Record<string, string>;
 		}
 

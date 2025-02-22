@@ -1,23 +1,23 @@
 <script lang="ts">
-	import { page } from '$app/state';
+	import { page } from "$app/state";
 
 	// Global CSS styling
-	import '../app.css';
+	import "../app.css";
 
-	import PageSEO from '$lib/components/PageSEO.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
+	import PageSEO from "$lib/components/PageSEO.svelte";
+	import Footer from "$lib/components/Footer.svelte";
+	import Navbar from "$lib/components/Navbar.svelte";
 
 	const navbarLinks = [
-		{ href: '/about', label: 'About' },
-		{ href: '/works', label: 'Works' },
-		{ href: '/contact', label: 'Contact' }
+		{ href: "/about", label: "About" },
+		{ href: "/works", label: "Works" },
+		{ href: "/contact", label: "Contact" }
 	];
 
 	const footerLinks = [
-		{ href: 'https://www.linkedin.com/in/EzraWolf/', label: 'LinkedIn' },
-		{ href: 'https://github.com/EzraWolf', label: 'Github' },
-		{ href: 'https://hackaday.io/EzraWolf', label: 'Hackaday.io' }
+		{ href: "https://www.linkedin.com/in/EzraWolf/", label: "LinkedIn" },
+		{ href: "https://github.com/EzraWolf", label: "Github" },
+		{ href: "https://hackaday.io/EzraWolf", label: "Hackaday.io" }
 	];
 
 	let { children } = $props();
@@ -28,7 +28,7 @@
 	title="Ezra Wolf's Portfolio"
 	description="Take a look."
 	image="/social-preview.jpg"
-	keywords={['Ezra Wolf', 'Portfolio']}
+	keywords={["Ezra Wolf", "Portfolio"]}
 	{...page.data.seo}
 />
 

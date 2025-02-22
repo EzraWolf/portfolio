@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { page } from '$app/state';
+	import { page } from "$app/state";
 
 	export let title: string;
 	export let description: string;
 	export let keywords: string[];
-	export let image: string = '/default-social-image.jpg';
+	export let image: string = "/default-social-image.jpg";
 	export let noIndex: boolean = false;
 
 	let canonical = page.url.href;
 	let siteName = "Ezra Wolf's Portfolio";
-	// Automatic absolute URL conversion
 
+	// Automatic absolute URL conversion
 	$: pageImageURL = new URL(image, page.url.origin).href;
 </script>
 
@@ -18,10 +18,10 @@
 	<!-- Core Metadata -->
 	<title>{title}</title>
 	<meta name="description" content={description} />
-	<meta name="robots" content={noIndex ? 'noindex,nofollow' : 'index,follow'} />
+	<meta name="robots" content={noIndex ? "noindex,nofollow" : "index,follow"} />
 
 	{#if keywords.length}
-		<meta name="keywords" content={keywords.join(', ')} />
+		<meta name="keywords" content={keywords.join(", ")} />
 	{/if}
 
 	<!-- Open Graph (Facebook/Discord) -->

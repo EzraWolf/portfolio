@@ -2,7 +2,7 @@
 	export let title: string;
 	export let description: string;
 
-	const siteTitle: string = 'Portfolio Header Name';
+	const siteTitle: string = "Portfolio Header Name";
 	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle;
 </script>
 

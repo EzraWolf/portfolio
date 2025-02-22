@@ -1,12 +1,12 @@
 // import adapter from '@sveltejs/adapter-auto';
-import adapter from '@sveltejs/adapter-static';
-import { mdsvex } from 'mdsvex';
-import mdsvexConfig from './mdsvex.config.js';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from "@sveltejs/adapter-static";
+import { mdsvex } from "mdsvex";
+import mdsvexConfig from "./mdsvex.config.js";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', ...mdsvexConfig.extensions],
+	extensions: [".svelte", ...mdsvexConfig.extensions],
 
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
@@ -19,8 +19,8 @@ const config = {
 		adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below
-			pages: 'build',
-			assets: 'build',
+			pages: "build",
+			assets: "build",
 			fallback: undefined,
 			precompress: false,
 			strict: true

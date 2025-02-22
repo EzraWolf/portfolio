@@ -15,8 +15,13 @@
 		--neo-white: hsl(48, 100%, 96.08%); /* #FFFBEB */
 		--neo-black: hsl(0, 0%, 10.2%); /* #1A1A1A */
 
-		--red: hsl(0, 100%, 60%); /* #FF3333 */
-		--yellow: hsl(49.89, 100%, 65.1%); /* #FFE14D */
+		--neo-red: hsl(0, 100%, 60%); /* #FF3333 */
+		--neo-yellow: hsl(49.89, 100%, 65.1%); /* #FFE14D */
+		--neo-lime: hsl(65.58, 92.81%, 72.75%); /* #EEFA79 */
+		--neo-purple: hsl(253.45, 24.79%, 45.88%); /* #655892 */
+
+		--neo-green: hsl(140.87, 36.51%, 75.29%); /* #A9D7B9 */
+		--neo-pink: hsl(297.89, 100%, 88.82%); /* #FDC6FF */
 
 		/* Fontface */
 		--primary-font: monospace;
@@ -57,10 +62,10 @@
 		--border: var(--neo-black);
 		--input: var(--neo-white);
 
-		--primary: var(--red);
+		--primary: var(--neo-red);
 		--primary-foreground: var(--neo-white);
 
-		--secondary: var(--yellow);
+		--secondary: var(--neo-yellow);
 		--secondary-foreground: var(--neo-black);
 
 		--accent: var(--neo-black);
@@ -90,10 +95,10 @@
 		--border: var(--neo-white);
 		--input: var(--neo-black);
 
-		--primary: var(--red);
+		--primary: var(--neo-red);
 		--primary-foreground: var(--neo-black);
 
-		--secondary: var(--yellow);
+		--secondary: var(--neo-yellow);
 		--secondary-foreground: var(--neo-black);
 
 		--accent: var(--neo-black);
