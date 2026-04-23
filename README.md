@@ -1,36 +1,42 @@
-# [Portfolio](ezrawolf.info)
+# sv
 
-My personal portfolio website built with SvelteKit.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Manual Setup
+## Creating a project
 
-```bash
-bun x sv create [name]
-- prettier
-- eslint
+If you're seeing this, you've probably already done this step. Congrats!
+
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-Install shadcn-svelte, all default features
+To recreate this project with the same configuration:
 
-```bash
-bun x sv@0.6.18 add tailwindcss
-bun x shadcn-svelte@latest init
+```sh
+# recreate this project
+bun x sv@0.15.1 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" sveltekit-adapter="adapter:cloudflare+cfTarget:workers" paraglide="languageTags:en, de, es, fr, nl, ru+demo:yes" --install bun .
 ```
 
-```bash
-bun i -D mdsvex
-bun i remark-github
-bun i remark-abbr
-bun i rehype-slug
-bun i rehype-autolink-headings
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-```bash
-bun i
-bun format
-bun dev
+## Building
 
-# or
+To create a production version of your app:
 
-bun build
+```sh
+npm run build
 ```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

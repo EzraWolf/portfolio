@@ -1,34 +1,9 @@
-
-# Project Markdown
-*.md
-*.svelte.md
-*.svx
-
-# Generated
-**/.vscode/
-/.svelte-kit
-/build
-.output
-.vercel
-.netlify
-.wrangler
-**/.log
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-
-# System
-.DS_Store
-Thumbs.db
-
-# Environment
-.env
-.env.*
-!.env.example
-!.env.test
-
 # Package Managers
-/node_modules
-*.lockb
-*.lock
-*.lock.json
-*.lock.yaml
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+bun.lockb
+
+# Miscellaneous
+/static/

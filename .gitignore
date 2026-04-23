@@ -1,29 +1,26 @@
+node_modules
 
-# Generated
-**/.vscode/
-/.svelte-kit
-/build
+# Output
 .output
 .vercel
 .netlify
 .wrangler
-**/.log
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+/.svelte-kit
+/build
 
-# System
+# OS
 .DS_Store
 Thumbs.db
 
-# Environment
+# Env
 .env
 .env.*
 !.env.example
 !.env.test
 
-# Package Managers
-/node_modules
-*.lockb
-*.lock
-*.lock.json
-*.lock.yaml
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+# Paraglide
+src/lib/paraglide
+project.inlang/cache/
