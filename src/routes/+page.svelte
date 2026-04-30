@@ -1,41 +1,17 @@
 <script lang="ts">
-	import HomeHero from '$lib/components/HomeHero.svelte';
+	import ImageHero from '$lib/components/ImageHero.svelte';
 	import SplitParagraph from '$lib/components/SplitParagraph.svelte';
 </script>
 
-<div class="flex h-[calc(100svh-8rem)] flex-col pb-8">
-	<div class="flex flex-1 items-center justify-center">
-		<HomeHero />
-	</div>
-
+<div class="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-16 px-8 py-8">
+	<ImageHero caption="Figure 1: The Placeholder." />
 	<SplitParagraph>
 		{#snippet left()}
-			I am Ezra Wolf. I design silicon, satellites, and circuitry — small systems pursued with
-			patience and a long horizon. My
-			<a
-				href="/explorations"
-				class="underline decoration-border underline-offset-4 hover:decoration-foreground"
-			>
-				interests wander widely
-			</a>, though the discipline does not. I work quietly, prefer the durable over the loud, and
-			treat each artifact as a small argument for how things ought to be made.
+			I am <a href="mailto:ezra@terse.ink">Ezra Wolf</a>. I design satellites, silicon, and
+			circuitry. <a href="/works">My works</a> are in orbit and praised by Wozniak.
 		{/snippet}
 		{#snippet right()}
-			Present efforts concentrate on
-			<a
-				href="/research"
-				class="underline decoration-border underline-offset-4 hover:decoration-foreground"
-			>
-				compute-in-memory research
-			</a>
-			and a handful of
-			<a
-				href="/works"
-				class="underline decoration-border underline-offset-4 hover:decoration-foreground"
-			>
-				capital works
-			</a>
-			spanning silicon, space, and circuitry. Less written here than elsewhere; the rest is in the making.
+			The world ought known and I ought know it. If humanly done before, it is within my reach.
 		{/snippet}
 	</SplitParagraph>
 </div>
