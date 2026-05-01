@@ -10,7 +10,7 @@
 
 	let { children } = $props();
 
-	const title = $derived(page.data.title ?? 'Design the World');
+	const title = $derived(page.data.title ?? "Terse Ink");
 </script>
 
 <svelte:head>
