@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+
 	let {
 		src,
 		alt = '',
@@ -6,7 +8,7 @@
 	}: {
 		src?: string;
 		alt?: string;
-		caption?: string;
+		caption?: Snippet;
 	} = $props();
 </script>
 
@@ -17,6 +19,6 @@
 		<div class="aspect-video w-full border border-dashed"></div>
 	{/if}
 	{#if caption}
-		<figcaption>{caption}</figcaption>
+		<p>{@render caption()}</p>
 	{/if}
 </figure>

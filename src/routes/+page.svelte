@@ -4,14 +4,24 @@
 </script>
 
 <div class="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-16 px-8 py-8">
-	<ImageHero caption="Figure 1: The Placeholder." />
+	<ImageHero
+		src="/ng24.png"
+		alt="A photograph of the NG-24 launch vehicle - a Falcon 9 - with the return booster overlayed in the foreground."
+	>
+		{#snippet caption()}
+			LEOPARDSat-1 launching aboard NG-24. Credit: <a
+				href="https://www.dvidshub.net/portfolio/1894107/gwendolyn-kurzen">Gwendolyn Kurzen.</a
+			>
+		{/snippet}
+	</ImageHero>
 	<SplitParagraph>
 		{#snippet left()}
-			I am <a href="mailto:ezra@terse.ink">Ezra Wolf</a>. I design satellites, silicon, and
-			circuitry. <a href="/works">My works</a> are in orbit and praised by Wozniak.
+			<a href="mailto:ezra@terse.ink">Ezra Wolf</a>; satellite, silicon, and circuitry designer.
+			Towards polymathy, this site is my record of <a href="/works">works</a> and
+			<a href="/explorations">explorations</a>.
 		{/snippet}
 		{#snippet right()}
-			The world ought known and I ought know it. If humanly done before, it is within my reach.
+			For the world ought known and I ought know it. My life as simple as possible and no simpler.
 		{/snippet}
 	</SplitParagraph>
 </div>
