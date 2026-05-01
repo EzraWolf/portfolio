@@ -6,11 +6,11 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '$lib/components/Navbar.svelte';
-	// import Footer from '$lib/components/Footer.svelte';
+	// import Footer from "$lib/components/Footer.svelte";
 
 	let { children } = $props();
 
-	const title = $derived(page.data.title ?? "Terse Ink");
+	const title = $derived(page.data.title ?? 'Terse Ink');
 </script>
 
 <svelte:head>
