@@ -18,9 +18,7 @@
 	const message = $derived(messages[page.status] ?? page.error?.message ?? 'Something went wrong.');
 </script>
 
-<div
-	class="mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-center gap-4 px-8 py-8 text-center"
->
+<div class="mx-auto w-full max-w-2xl space-y-4 px-8 pt-32 pb-8 text-center">
 	<h2 class="font-sans text-lg font-bold tracking-tight md:text-xl">{page.status}</h2>
 	<p>{message}</p>
 </div>
