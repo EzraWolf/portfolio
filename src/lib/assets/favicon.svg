@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <rect id="Background" x="0" y="0" width="1024" height="1024" style="fill:rgb(250,250,250);"/>
-    <g id="Computer" transform="matrix(1.03116,0,0,0.25779,-56.5953,743.719)">
-        <path d="M894,56L894,678L272,678L272,114.313L894,56Z" style="fill:rgb(10,10,10);"/>
+    <g id="T-Outline" serif:id="T Outline" transform="matrix(7.89583,0,0,7.89583,-626.667,-4457.81)">
+        <g transform="matrix(1.29689,0,0,0.617565,-38.0015,254.195)">
+            <rect x="128" y="581" width="25" height="105" style="fill:rgb(10,10,10);"/>
+            <path d="M156.125,692.562L124.875,692.562L124.875,574.438L156.125,574.438L156.125,692.562ZM153,581L128,581L128,686L153,686L153,581Z" style="fill:rgb(250,250,250);"/>
+        </g>
+        <g transform="matrix(2.11449,0,0,1.15793,-77.8103,-91.7599)">
+            <rect x="82" y="581" width="46" height="28" style="fill:rgb(10,10,10);"/>
+            <path d="M129.917,612.5L80.083,612.5L80.083,577.5L129.917,577.5L129.917,612.5ZM128,581L82,581L82,609L128,609L128,581Z" style="fill:rgb(250,250,250);"/>
+        </g>
     </g>
-    <g id="Monitor" transform="matrix(1.03116,0,0,1.03116,-121.736,47.7551)">
-        <path d="M894,56L894,678L272,658.563L272,75.437L894,56Z" style="fill:rgb(10,10,10);"/>
+    <g id="T" transform="matrix(7.89583,0,0,7.89583,-626.667,-4457.81)">
+        <g transform="matrix(1.29689,0,0,0.617565,-38.0015,254.195)">
+            <rect x="128" y="581" width="25" height="105" style="fill:rgb(10,10,10);"/>
+            <path d="M153.26,686.547L127.74,686.547L127.74,580.453L153.26,580.453L153.26,686.547ZM153,581L128,581L128,686L153,686L153,581Z" style="fill:rgb(10,10,10);"/>
+        </g>
+        <g transform="matrix(2.11449,0,0,1.15793,-77.8103,-91.7599)">
+            <rect x="82" y="581" width="46" height="28" style="fill:rgb(10,10,10);"/>
+            <path d="M128.16,609.292L81.84,609.292L81.84,580.708L128.16,580.708L128.16,609.292ZM128,581L82,581L82,609L128,609L128,581Z" style="fill:rgb(10,10,10);"/>
+        </g>
     </g>
 </svg>
