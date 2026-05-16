@@ -21,7 +21,7 @@
 			<a href="/explorations">explorations</a>.
 		{/snippet}
 		{#snippet right()}
-			My life is as simple as possible and no simpler. The world ought known and I ought know it.
+			My life is as simple as possible and no simpler. The world ought to be known and I ought to know it.
 		{/snippet}
 	</SplitParagraph>
 </div>
