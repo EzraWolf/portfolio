@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="T-Outline" serif:id="T Outline" transform="matrix(7.89583,0,0,7.89583,-626.667,-4457.81)">
-        <g transform="matrix(1.29689,0,0,0.617565,-38.0015,254.195)">
-            <rect x="128" y="581" width="25" height="105" style="fill:rgb(10,10,10);"/>
-            <path d="M156.125,692.562L124.875,692.562L124.875,574.438L156.125,574.438L156.125,692.562ZM153,581L128,581L128,686L153,686L153,581Z" style="fill:rgb(250,250,250);"/>
-        </g>
-        <g transform="matrix(2.11449,0,0,1.15793,-77.8103,-91.7599)">
-            <rect x="82" y="581" width="46" height="28" style="fill:rgb(10,10,10);"/>
-            <path d="M129.917,612.5L80.083,612.5L80.083,577.5L129.917,577.5L129.917,612.5ZM128,581L82,581L82,609L128,609L128,581Z" style="fill:rgb(250,250,250);"/>
+    <circle id="Background-Round" serif:id="Background Round" cx="512" cy="512" r="512" style="fill:rgb(250,250,250);"/>
+    <g id="Eta" transform="matrix(1,0,0,1,70.5333,-107.133)">
+        <g transform="matrix(933.333,0,0,933.333,154,812)">
+            <path d="M0.072,-0L0.072,-0.526L0.195,-0.526L0.195,-0.462L0.203,-0.462C0.218,-0.487 0.24,-0.506 0.267,-0.521C0.294,-0.535 0.325,-0.542 0.359,-0.542C0.42,-0.542 0.466,-0.524 0.497,-0.488C0.528,-0.451 0.544,-0.4 0.544,-0.335L0.544,0.216L0.413,0.216L0.413,-0.317C0.413,-0.35 0.405,-0.376 0.389,-0.394C0.372,-0.411 0.349,-0.42 0.32,-0.42C0.296,-0.42 0.275,-0.414 0.258,-0.402C0.24,-0.389 0.226,-0.373 0.217,-0.352C0.208,-0.331 0.203,-0.308 0.203,-0.281L0.203,-0L0.072,-0Z" style="fill:rgb(10,10,10);fill-rule:nonzero;"/>
         </g>
     </g>
-    <g id="T" transform="matrix(7.89583,0,0,7.89583,-626.667,-4457.81)">
-        <g transform="matrix(1.29689,0,0,0.617565,-38.0015,254.195)">
-            <rect x="128" y="581" width="25" height="105" style="fill:rgb(10,10,10);"/>
-            <path d="M153.26,686.547L127.74,686.547L127.74,580.453L153.26,580.453L153.26,686.547ZM153,581L128,581L128,686L153,686L153,581Z" style="fill:rgb(10,10,10);"/>
-        </g>
-        <g transform="matrix(2.11449,0,0,1.15793,-77.8103,-91.7599)">
-            <rect x="82" y="581" width="46" height="28" style="fill:rgb(10,10,10);"/>
-            <path d="M128.16,609.292L81.84,609.292L81.84,580.708L128.16,580.708L128.16,609.292ZM128,581L82,581L82,609L128,609L128,581Z" style="fill:rgb(10,10,10);"/>
-        </g>
+    <g id="Tail-Shortener" serif:id="Tail Shortener" transform="matrix(0.671642,0,0,1.14493,225.522,-126.106)">
+        <rect x="565" y="863" width="201" height="69" style="fill:rgb(250,250,250);"/>
     </g>
 </svg>
