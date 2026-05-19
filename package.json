@@ -46,6 +46,7 @@
 		"wrangler": "^4.81.0"
 	},
 	"dependencies": {
+		"@fontsource-variable/google-sans": "^5.2.1",
 		"@fontsource-variable/noto-serif": "^5.2.9"
 	}
 }
