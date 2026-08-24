@@ -10,7 +10,7 @@
 	>
 		{#snippet caption()}
 			LEOPARDSat-1 launching aboard NG-24. credit: <a
-				href="https://www.dvidshub.net/portfolio/1894107/gwendolyn-kurzen">Gwendolyn Kurzen.</a
+				href="https://www.dvidshub.net/image/9617819/cygnus-ng-24-launches-cape-canaveral-space-force-station">Gwendolyn Kurzen.</a
 			>
 		{/snippet}
 	</ImageHero>
