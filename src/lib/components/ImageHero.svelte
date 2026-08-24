@@ -14,7 +14,14 @@
 
 <figure class="flex flex-col items-center {caption ? 'gap-3' : ''}">
 	{#if src}
-		<img {src} {alt} class="aspect-video w-full object-cover" />
+		<img
+			{src}
+			{alt}
+			width="1440"
+			height="810"
+			fetchpriority="high"
+			class="aspect-video w-full object-cover"
+		/>
 	{:else}
 		<div class="aspect-video w-full border border-dashed"></div>
 	{/if}
