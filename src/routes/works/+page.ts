@@ -1,1 +1,3 @@
-export const load = () => ({ title: 'capital works' });
+import { m } from '$lib/paraglide/messages';
+
+export const load = () => ({ title: m.title_works() });

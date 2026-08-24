@@ -1,4 +1,32 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+	"site_name": "ezra wolf",
+	"title_home": "design the world",
+	"title_works": "capital works",
+	"title_explorations": "explorations",
+	"title_research": "compute in memory",
+
+	"home_hero_alt": "a photograph of the NG-24 Falcon 9 launch vehicle with the return booster overlaid in the foreground.",
+	"home_hero_caption": "LEOPARDSat-1 launching aboard NG-24. credit:",
+	"home_hero_credit": "Gwendolyn Kurzen.",
+	"home_introduction": "{#link href=|mailto:ezra@terse.ink|}Ezra Wolf{/link}; satellite, silicon, and circuitry designer. {#link href=|/works|}works{/link} and {#link href=|/explorations|}explorations{/link} towards polymathy and reduction.",
+	"home_statement": "my life is as simple as possible and no simpler. the world ought to be known and i ought to know it.",
+
+	"placeholder_heading": "work in progress",
+	"placeholder_date": "aug '26",
+
+	"footer_contact": "contact",
+
+	"error_400": "malformed request.",
+	"error_401": "you are not yet known here.",
+	"error_403": "this door is closed to you.",
+	"error_404": "this page exists in theory.",
+	"error_408": "the request got a job elsewhere.",
+	"error_410": "gone.",
+	"error_429": "slow down.",
+	"error_500": "something broke on my end.",
+	"error_502": "a messenger between servers was lost.",
+	"error_503": "the service is briefly unavailable.",
+	"error_504": "an upstream server did not answer in time.",
+	"error_default": "something went wrong."
 }

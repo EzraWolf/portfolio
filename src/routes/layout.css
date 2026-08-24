@@ -12,7 +12,7 @@
 	--black: #0a0a0a;
 	--gray-light: #aaaaaa;
 	--gray: #5a5a5a;
-	--highlight: #4441ff;
+	--blue: #4441ff;
 	--red: #dc2626;
 
 	--background: var(--white);
@@ -27,13 +27,13 @@
 	--secondary-foreground: var(--black);
 	--muted: var(--gray-light);
 	--muted-foreground: var(--gray);
-	--accent: var(--highlight);
+	--accent: var(--blue);
 	--accent-foreground: var(--white);
 	--destructive: var(--red);
 	--destructive-foreground: var(--white);
 	--border: var(--gray-light);
 	--input: var(--gray-light);
-	--ring: var(--highlight);
+	--ring: var(--blue);
 	--chart-1: var(--gray-light);
 	--chart-2: var(--gray);
 	--chart-3: var(--black);
@@ -44,10 +44,10 @@
 	--sidebar-foreground: var(--black);
 	--sidebar-primary: var(--black);
 	--sidebar-primary-foreground: var(--white);
-	--sidebar-accent: var(--highlight);
+	--sidebar-accent: var(--blue);
 	--sidebar-accent-foreground: var(--white);
 	--sidebar-border: var(--gray-light);
-	--sidebar-ring: var(--highlight);
+	--sidebar-ring: var(--blue);
 }
 
 @theme inline {
@@ -107,7 +107,7 @@
 		@apply bg-background font-serif text-sm text-foreground;
 	}
 	::selection {
-		background: var(--highlight);
+		background: var(--blue);
 		color: var(--white);
 	}
 	p a {

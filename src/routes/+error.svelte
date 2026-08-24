@@ -1,21 +1,22 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { m } from '$lib/paraglide/messages';
 
 	const messages: Record<number, string> = {
-		400: 'malformed request.',
-		401: 'you are not yet known here.',
-		403: 'this door is closed to you.',
-		404: 'this page exists in theory.',
-		408: 'the request got a job elsewhere.',
-		410: 'gone.',
-		429: 'too many requests; stop.',
-		500: 'something broke on my end.',
-		502: 'a messenger between servers was lost.',
-		503: 'the service is briefly unavailable.',
-		504: 'an upstream server did not answer in time.'
+		400: m.error_400(),
+		401: m.error_401(),
+		403: m.error_403(),
+		404: m.error_404(),
+		408: m.error_408(),
+		410: m.error_410(),
+		429: m.error_429(),
+		500: m.error_500(),
+		502: m.error_502(),
+		503: m.error_503(),
+		504: m.error_504()
 	};
 
-	const message = $derived(messages[page.status] ?? page.error?.message ?? 'something went wrong.');
+	const message = $derived(messages[page.status] ?? page.error?.message ?? m.error_default());
 </script>
 
 <div class="mx-auto w-full max-w-2xl space-y-4 px-8 pt-32 pb-8 text-center">

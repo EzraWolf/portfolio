@@ -1,1 +1,3 @@
-export const load = () => ({ title: 'design the world' });
+import { m } from '$lib/paraglide/messages';
+
+export const load = () => ({ title: m.title_home() });

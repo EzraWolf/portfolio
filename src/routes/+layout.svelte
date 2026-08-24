@@ -2,6 +2,7 @@
 	import type { Pathname } from '$app/types';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
+	import { m } from '$lib/paraglide/messages';
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
@@ -10,7 +11,7 @@
 
 	let { children } = $props();
 
-	const title = $derived(page.data.title ?? "ezra wolf");
+	const title = $derived(page.data.title ?? m.site_name());
 </script>
 
 <svelte:head>
