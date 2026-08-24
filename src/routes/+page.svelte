@@ -6,10 +6,10 @@
 <div class="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-16 px-8 py-8">
 	<ImageHero
 		src="/ng24.png"
-		alt="A photograph of the NG-24 launch vehicle - a Falcon 9 - with the return booster overlayed in the foreground."
+		alt="a photograph of the NG-24 Falcon 9 launch vehicle with the return booster overlayed in the foreground."
 	>
 		{#snippet caption()}
-			LEOPARDSat-1 launching aboard NG-24. Credit: <a
+			LEOPARDSat-1 launching aboard NG-24. credit: <a
 				href="https://www.dvidshub.net/portfolio/1894107/gwendolyn-kurzen">Gwendolyn Kurzen.</a
 			>
 		{/snippet}
@@ -17,12 +17,11 @@
 	<SplitParagraph>
 		{#snippet left()}
 			<a href="mailto:ezra@terse.ink">Ezra Wolf</a>; satellite, silicon, and circuitry designer.
-			Towards polymathy, this site is my record of <a href="/works">works</a> and
-			<a href="/explorations">explorations</a>.
+			<a href="/works">works</a> and <a href="/explorations">explorations</a>
+			towards polymathy and reduction.
 		{/snippet}
 		{#snippet right()}
-			My life is as simple as possible and no simpler. The world ought to be known and I ought to
-			know it.
+			my life is as simple as possible and no simpler. the world ought to be known and i ought to know it.
 		{/snippet}
 	</SplitParagraph>
 </div>

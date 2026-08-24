@@ -12,6 +12,7 @@
 	--black: #0a0a0a;
 	--gray-light: #aaaaaa;
 	--gray: #5a5a5a;
+	--highlight: #4441ff;
 	--red: #dc2626;
 
 	--background: var(--white);
@@ -26,12 +27,13 @@
 	--secondary-foreground: var(--black);
 	--muted: var(--gray-light);
 	--muted-foreground: var(--gray);
-	--accent: var(--gray-light);
-	--accent-foreground: var(--black);
+	--accent: var(--highlight);
+	--accent-foreground: var(--white);
 	--destructive: var(--red);
+	--destructive-foreground: var(--white);
 	--border: var(--gray-light);
 	--input: var(--gray-light);
-	--ring: var(--gray);
+	--ring: var(--highlight);
 	--chart-1: var(--gray-light);
 	--chart-2: var(--gray);
 	--chart-3: var(--black);
@@ -42,10 +44,10 @@
 	--sidebar-foreground: var(--black);
 	--sidebar-primary: var(--black);
 	--sidebar-primary-foreground: var(--white);
-	--sidebar-accent: var(--gray-light);
-	--sidebar-accent-foreground: var(--black);
+	--sidebar-accent: var(--highlight);
+	--sidebar-accent-foreground: var(--white);
 	--sidebar-border: var(--gray-light);
-	--sidebar-ring: var(--gray);
+	--sidebar-ring: var(--highlight);
 }
 
 @theme inline {
@@ -69,6 +71,7 @@
 	--color-input: var(--input);
 	--color-border: var(--border);
 	--color-destructive: var(--destructive);
+	--color-destructive-foreground: var(--destructive-foreground);
 	--color-accent-foreground: var(--accent-foreground);
 	--color-accent: var(--accent);
 	--color-muted-foreground: var(--muted-foreground);
@@ -103,7 +106,11 @@
 	body {
 		@apply bg-background font-serif text-sm text-foreground;
 	}
+	::selection {
+		background: var(--highlight);
+		color: var(--white);
+	}
 	p a {
-		@apply underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground active:decoration-foreground;
+		@apply underline decoration-border underline-offset-4 transition-colors hover:text-accent hover:decoration-accent active:text-accent active:decoration-accent;
 	}
 }

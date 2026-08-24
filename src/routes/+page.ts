@@ -1,1 +1,1 @@
-export const load = () => ({ title: 'Design the World' });
+export const load = () => ({ title: 'design the world' });

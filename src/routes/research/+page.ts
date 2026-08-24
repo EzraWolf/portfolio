@@ -1,1 +1,1 @@
-export const load = () => ({ title: 'Compute in Memory' });
+export const load = () => ({ title: 'compute in memory' });
