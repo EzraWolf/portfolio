@@ -2,7 +2,11 @@
 	import { getLocale } from '$lib/paraglide/runtime';
 	import { onMount } from 'svelte';
 
-	let { day = false, month = false, year = false } = $props<{
+	let {
+		day = false,
+		month = false,
+		year = false
+	} = $props<{
 		day?: boolean;
 		month?: boolean;
 		year?: boolean;
