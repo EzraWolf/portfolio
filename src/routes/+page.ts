@@ -3,12 +3,12 @@ import { m } from '$lib/paraglide/messages';
 export const load = () => ({
 	title: m.title_home(),
 	meta: {
-		title: m.site_name(),
+		title: m.title_home(),
 		description: m.meta_home_description(),
-		image: '/ng24.png',
+		image: '/ng24-og.png',
 		imageAlt: m.home_hero_alt(),
-		imageWidth: 1440,
-		imageHeight: 809,
+		imageWidth: 1000,
+		imageHeight: 562,
 		imageType: 'image/png',
 		author: m.site_name(),
 		jsonLd: {
