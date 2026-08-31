@@ -6,16 +6,34 @@
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import Meta from '$lib/components/Meta.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	// import Footer from "$lib/components/Footer.svelte";
 
 	let { children } = $props();
 
 	const title = $derived(page.data.title ?? m.site_name());
+	const meta = $derived(page.data.meta);
 </script>
 
+<Meta
+	title={meta?.title ?? title}
+	documentTitle={title}
+	description={meta?.description}
+	canonical={meta?.canonical}
+	image={meta?.image}
+	imageAlt={meta?.imageAlt}
+	imageWidth={meta?.imageWidth}
+	imageHeight={meta?.imageHeight}
+	imageType={meta?.imageType}
+	author={meta?.author}
+	index={meta?.index}
+	openGraph={meta?.openGraph}
+	twitter={meta?.twitter}
+	jsonLd={meta?.jsonLd}
+/>
+
 <svelte:head>
-	<title>{title}</title>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
