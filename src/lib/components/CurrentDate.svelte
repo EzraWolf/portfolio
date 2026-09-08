@@ -15,19 +15,19 @@
 	function getDate(date: Date, timeZone?: string) {
 		const locale = getLocale();
 		const parts = new Intl.DateTimeFormat(locale, {
-			day: '2-digit',
-			month: 'short',
-			year: '2-digit',
-			timeZone
+				day: '2-digit',
+				month: 'short',
+				year: '2-digit',
+				timeZone
 		}).formatToParts(date);
 		const value = (type: Intl.DateTimeFormatPartTypes) =>
 			parts.find((part) => part.type === type)?.value ?? '';
 
 		const machineParts = new Intl.DateTimeFormat('en-CA', {
-			day: '2-digit',
-			month: '2-digit',
-			year: 'numeric',
-			timeZone
+				day: '2-digit',
+				month: '2-digit',
+				year: 'numeric',
+				timeZone
 		}).formatToParts(date);
 		const machineValue = (type: Intl.DateTimeFormatPartTypes) =>
 			machineParts.find((part) => part.type === type)?.value ?? '';
